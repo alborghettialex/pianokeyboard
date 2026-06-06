@@ -1,4 +1,5 @@
 import { useState } from "react";
+import playNote from "../hooks/PianoSounds";
 
 export default function PianoKey({
   label,
@@ -38,6 +39,7 @@ export default function PianoKey({
       style={buttonStyle}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={() => playNote(label)}
     >
       {label}
     </button>
