@@ -32,6 +32,10 @@ export default function PianoKey({
         transform: "translateX(-50%)",
         cursor: "pointer",
         transition: "background-color 0.1s ease",
+        display: "inline-grid",
+        alignContent: "end",
+        fontSize: "2vh",
+        paddingBottom: "1%",
       }
     : {
         backgroundColor: isClicked
@@ -47,6 +51,10 @@ export default function PianoKey({
         zIndex: 1,
         cursor: "pointer",
         transition: "background-color 0.1s ease",
+        display: "inline-grid",
+        alignContent: "end",
+        paddingBottom: "1%",
+        fontSize: "3vh",
       };
 
   return (
